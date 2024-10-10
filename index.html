@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <title>Campeones de League of Legends</title>
+</head>
+<body style="background-color:#091428;">
+
+  <div style="position: relative; background-color:#091428;">
+    <div class="container-flex">
+      <video src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/8ab3e227121c53aacab0c9b9f7a48adbc65db520.webm" autoplay muted loop style="width: 100%; height: auto;"></video>
+    </div>
+    <div>
+      <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9eb028de391e65072d06e77f06d0955f66b9fa2c-736x316.png?auto=format&fit=fill&q=80&w=300" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: auto; width: 300px;">
+    </div>
+  </div>
+  <br><br>
+  <!-- Contenedor donde se agregarán las cards -->
+  
+  <div class="container-flex" style=" align-items: center; color: white;" id="fondo">
+    <div class="row centered-content">
+      <p>ELIGE TU</p>
+      <h2>CAMPEÓN</h2>
+    </div>
+    <br>
+    <div class="container" >
+      <div class="row centered-content">
+        <input type="text" id="search-bar" placeholder="Buscar campeón..." onkeyup="buscarCampeon()">
+      </div>
+      
+    </div>
+    <br>
+    <h3 style="text-transform: capitalize;"></h3>
+    <div class="row">
+      <ol id="role-filter" style="color: white;">
+        <li onclick="filtrarPorRol('Assassin')" ondblclick="mostrarTodos()">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/e1511d4d93a84b836844c77b4ff96b1cf65f4f8d-220x220.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center" alt="" style="height: 70px; width: 70px;">
+          <p>ASESINOS</p>
+        </li>
+        <li onclick="filtrarPorRol('Fighter')" ondblclick="mostrarTodos()">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/651b0a4388dffbb709588546d7d73fd1a4e5b45d-220x220.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center" alt="" style="height: 70px; width: 70px;">
+          <p>LUCHADORES</p>
+        </li>
+        <li onclick="filtrarPorRol('Mage')" ondblclick="mostrarTodos()">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9872a60add3d215d217eda67e08a07ef7191ab89-220x220.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center" alt="" style="height: 70px; width: 70px;">
+          <p>MAGOS</p>
+        </li>
+        <li  onclick="filtrarPorRol('Marksman')" ondblclick="mostrarTodos()">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fce8a3c7b1267ce428530fa845dd3f970772d5cd-220x220.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center" alt="" style="height: 70px; width: 70px;">
+          <p>TIRADORES</p>
+        </li>
+        <li onclick="filtrarPorRol('Support')" ondblclick="mostrarTodos()">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/1824a47af762aeac9d88d3bae5a4eb2ece928f0d-220x220.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center" alt="" style="height: 70px; width: 70px;">
+          <p>SOPORTES</p>
+        </li>
+        <li onclick="filtrarPorRol('Tank')" ondblclick="mostrarTodos()">
+          <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/019898f21e749a5f6f71b609714d87f3fe084df5-220x220.png?auto=format&fit=crop&q=80&h=48&w=48&crop=center" alt="" style="height: 70px; width: 70px;">
+          <p>TANQUES</p>
+        </li>
+      </ol>
+    </div>
+    <br><br>
+    <!-- Contenedor donde se mostrarán las cartas filtradas -->
+    <div class="container-flex">
+      <div id="filtered-champions"></div>
+    </div>
+    
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+</html>

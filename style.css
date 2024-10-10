@@ -1,0 +1,87 @@
+#fondo{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-color:#091428;
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/a6f94cd5ed222d3b99e535f17cd9592d3c716bb5-3840x1616.png?auto=format&fit=fill&q=80&h=691);
+}
+
+
+#filtered-champions {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si no caben en la actual */
+    justify-content: space-between; /* Distribuye el espacio entre las tarjetas */
+}
+
+.card {
+    width: 250px; /* Ajusta el ancho de la tarjeta */
+    height: auto; /* La altura se ajusta automáticamente según el contenido */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.image {
+    width: 200px; /* Aumenta el ancho */
+    height: auto; /* Aumenta la altura */
+    object-fit: contain; /* Ajusta la imagen para que no se deforme */
+}
+
+
+.centered-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+}
+  
+p, h2 {
+    margin: 0; /* Elimina el margen por defecto de los elementos */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+  
+  
+
+.row ol {
+    list-style: none; /* Elimina los números de la lista */
+    display: flex; /* Alinea los elementos de manera horizontal */
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
+    padding: 0;
+    margin: 0;
+  }
+  
+.row li {
+    display: flex;
+    flex-direction: column; /* Ordena los elementos en columna */
+    align-items: center; /* Centra la imagen y el texto horizontalmente */
+    text-align: center; /* Centra el texto */
+    margin: 10px;
+}
+  
+.row li img {
+    width: 70px; /* Ajusta el tamaño de la imagen */
+    height: 70px;
+    margin-bottom: 5px; /* Añade un pequeño espacio entre la imagen y el texto */
+}
+  
+.row li p {
+    margin: 0; /* Asegura que el texto no tenga margen extra */
+}
+  
+  
